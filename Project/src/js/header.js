@@ -32,6 +32,7 @@ $(function(){
 	
 	
 	//回到顶部
+	$('#toTop').css('display','none');
 	$(window).scroll(function(){
 		var top = $(document).scrollTop();
 		if (top >= 100) {
