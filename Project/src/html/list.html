@@ -1,0 +1,650 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>列表页</title>
+		<link rel="stylesheet" type="text/css" href="../css/base.css" />
+		<link rel="stylesheet" type="text/css" href="../css/common.css" />
+		<link rel="stylesheet" type="text/css" href="../css/list.css" />
+		<script src="../lib/jquery-3.0.0.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../lib/jquery.cookie.js" type="text/javascript" charset="utf-8"></script>
+		
+		<script src="../js/header.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../js/login.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../js/list.js" type="text/javascript" charset="utf-8"></script>
+	</head>
+
+	<body>
+		<script type="text/javascript">
+			 $(document).ready(function(){
+			 	if ($.cookie("username")) {
+        		
+        		
+        		$('#user').html($.cookie("username"));
+        		$('#user').parent().attr('href','javasctript:;');
+        		$('#login').hover(function(){
+        			$('.yincang').css('display','block');
+        		
+        		},function(){
+        			$('.yincang').css('display','none');
+        		});
+        		
+        		$('#user-out').on('click',function(){
+
+					$.removeCookie('username',{path:'/'});
+					console.log(111);
+					$('#user').html('登录');
+        			$('#user').parent().attr('href','login.html');
+        			$('.yincang').css('display','none');
+        			$('#login').unbind();
+        			
+				});
+        	}     
+			 });
+		</script>
+		<section id="box">
+			<!--头部-->
+			<header>
+				<section class="container">
+					<div class="header-l">
+						<a href="../index.html">三星网上商城</a>
+					</div>
+					<div class="header-r">
+						<a href="../index.html">三星官网
+							<i><img src="../img/icon.png"/></i></a>
+					</div>
+				</section>
+			</header>
+
+			<!--导航-->
+			<section class="header-2">
+				<section class="container">
+					<!--导航栏-->
+					<ul id="nav">
+						<li>
+							<a href="">智能手机</a>
+							<div class="sub-menu">
+								<div class="container">
+									<ul class="sub-menu1">
+										<li>
+											<img src="../img/sub1.jpg" />
+											<a href="">Galaxy Note9</a>
+										</li>
+										<li>
+											<img src="../img/sub2.jpg" />
+											<a href="">Galaxy S9</a>
+										</li>
+										<li>
+											<img src="../img/sub3.jpg" />
+											<a href="">Galaxy A8s</a>
+										</li>
+										<li>
+											<img src="../img/sub4.jpg" />
+											<a href="">Galaxy A9s</a>
+										</li>
+									</ul>
+									<ul class="sub-menu2">
+										<li>
+											<a href="">Galaxy S系列</a>
+										</li>
+										<li>
+											<a href="">Galaxy Note系列</a>
+										</li>
+										<li>
+											<a href="">Galaxy A系列</a>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</li>
+						<li>
+							<a href="">可穿戴设备</a>
+							<div class="sub-menu">
+								<div class="container">
+									<ul class="sub-menu1">
+										<li>
+											<img src="../img/biao1.jpg" />
+											<a href="">Samsung Galaxy Watch 蓝牙版42mm玫瑰金</a>
+										</li>
+										<li>
+											<img src="../img/biao2.jpg" />
+											<a href="">Samsung Galaxy Watch LTE版 46mm钛泽银</a>
+										</li>
+										<li>
+											<img src="../img/biao2.jpg" />
+											<a href="">Samsung Galaxy Watch 蓝牙版46mm钛泽银</a>
+										</li>
+										<li>
+											<img src="../img/biao4.jpg" />
+											<a href="">Samsung Gear Sport 智能手表</a>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</li>
+						<li>
+							<a href="">个人电脑</a>
+							<div class="sub-menu">
+								<div class="container">
+									<ul class="sub-menu1">
+										<li>
+											<img src="../img/diannao1.jpg" />
+											<a href="">Galaxy Tab S4 4G</a>
+										</li>
+										<li>
+											<img src="../img/diannao2.jpg" />
+											<a href="">盖乐世 Tab E</a>
+										</li>
+										<li>
+											<img src="../img/diannao3.jpg" />
+											<a href="">三星笔记本星曜 930XBE-K03</a>
+										</li>
+										<li>
+											<img src="../img/diannao4.jpg" />
+											<a href="">三星笔记本星曜Pen Pro 930SBE-K01</a>
+										</li>
+									</ul>
+									<ul class="sub-menu2">
+										<li>
+											<a href="">Galaxy S系列</a>
+										</li>
+										<li>
+											<a href="">Galaxy Note系列</a>
+										</li>
+										<li>
+											<a href="">Galaxy A系列</a>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</li>
+						<li>
+							<a href="">空气净化器</a>
+							<div class="sub-menu">
+								<div class="container">
+									<ul class="sub-menu1">
+										<li>
+											<img src="../img/jing1.jpg" />
+											<a href="">三星空气净化器KJ350G-K3000WU</a>
+										</li>
+										<li>
+											<img src="../img/jing2.jpg" />
+											<a href="">三星空气净化器KJ719F-K7580WW</a>
+										</li>
+										
+									</ul>
+									<ul class="sub-menu2">
+										<li>
+											<a href="">JUPITER 系列</a>
+										</li>
+										<li>
+											<a href="">AX7000 系列</a>
+										</li>
+										
+									</ul>
+								</div>
+							</div>
+						</li>
+						<li>
+							<a href="">配件</a>
+							<div class="sub-menu">
+								<div class="container">
+									<ul class="sub-menu1">
+										<li>
+											<img src="../img/pei1.jpg" />
+											<a href="">盖乐世 Note9 LED智能保护套</a>
+										</li>
+										<li>
+											<img src="../img/pei2.jpg" />
+											<a href="">盖乐世 Note9 立式镜面保护套</a>
+										</li>
+										<li>
+											<img src="../img/pei3.jpg" />
+											<a href="">三星 旅行充电器 (Type C) </a>
+										</li>
+										<li>
+											<img src="../img/pei4.jpg" />
+											<a href="">Level In ANC 降噪耳机</a>
+										</li>
+									</ul>
+									<ul class="sub-menu2">
+										<li>
+											<a href="">保护类</a>
+										</li>
+										<li>
+											<a href="">电池/充电器</a>
+										</li>
+										<li>
+											<a href="">耳机/音响</a>
+										</li>
+										<li>
+											<a href="">移动电源</a>
+										</li>
+										<li>
+											<a href="">存储类</a>
+										</li>
+										<li>
+											<a href="">其它</a>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</li>
+					</ul>
+					<!--logo-->
+					<h1>
+						<a href="../index.html">
+							<img src="../img/logo.png"/>
+						</a>
+					</h1>
+					<!--搜索、购物车-->
+					<ul class="nav-right">
+						<li class="liserch">
+							<a href="">
+								<i class="icon icon-serch"></i>
+							</a>
+						</li>
+						<li class="licart">
+							<a href="cart.html">
+								<i class="icon icon-cart"></i>
+							</a>
+						</li>
+					</ul>
+					<!--登录电话客服-->
+					<ul class="nav-right2">
+						<li>
+							<a href="">
+								<i class="icon icon-tel"></i> 400 071 8899
+							</a>
+						</li>
+						<li>
+							<a href="">
+								<i class="icon icon-service"></i> 在线客服
+							</a>
+						</li>
+						<li id="login">
+							<a href="login.html">
+								<i class="icon icon-login"></i> <span id="user">登录</span>
+							</a>
+							<div class="yincang" style="display: none;">
+								<ul>
+									<li><a href="javasctript:;">我的订单</a></li>
+									<li><a href="javasctript:;">我的积分</a></li>
+									<li><a href="javasctript:;">优惠券</a></li>
+									<li><a href="javasctript:;">个人资料</a></li>
+									<li id="user-out"><a href="javasctript:;">退出</a></li>
+								</ul>
+							</div>
+						</li>
+					</ul>
+				</section>
+			</section>
+
+			<!--上导航-->
+			<section class="breadcrumb">
+				<ul>
+					<li>
+						<a href="javasctript:;">网上商城 > </a>
+					</li>
+					<li>
+						<a href="javasctript:;">智能手机</a>
+					</li>
+				</ul>
+			</section>
+
+			<!--列表部分-->
+			<section class="list-section">
+				<div class="list-conent">
+					<!--分类部分，左部导航-->
+					<div class="list-nav-left">
+						<div class="list-sorting">
+							<div class="list-sort">
+								<div class="nav-title">
+									<strong>分类</strong>
+								</div>
+								<div class="list-ulstyled list-rank-moble list-nav-level1">
+									<ul>
+										<li>
+											<a href="javasctript:;" class="tow-rank">智能手机</a>
+											<div class="list-nav-level2">
+												<ul>
+													<li id="sanxuan-s">
+														<a href="###">Galaxy S系列</a>
+													</li>
+													<li id="shaixuan-n">
+														<a href="###">Galaxy Note系列</a>
+													</li>
+													<li id="shaixuan-a">
+														<a href="###">Galaxy A系列</a>
+													</li>
+												</ul>
+											</div>
+										</li>
+									</ul>
+								</div>
+							</div>
+							<div class="list-sort">
+								<div class="nav-title">
+									<strong>价格</strong>
+								</div>
+								<div class="list-ulstyled price-i-sty white price-filter">
+									<ul class="check-color float-clearfix" id="shaixuan-jiage">
+										<li>
+											<label class="icon-checked">
+												<i tid="1700,2399"></i>
+												1700-2399元
+											</label>
+										</li>
+										<li>
+											<label class="icon-checked">
+												<i tid="2400,3899"></i>
+												2400-3899元
+											</label>
+										</li>
+										<li>
+											<label class="icon-checked">
+												<i tid="3900,4799"></i>
+												3900-4799元
+											</label>
+										</li>
+										<li>
+											<label class="icon-checked">
+												<i tid="4800,6699"></i>
+												4800-6699元
+											</label>
+										</li>
+										<li>
+											<label class="icon-checked">
+												<i tid="6700,100000"></i>
+												6700元以上
+											</label>
+										</li>
+									</ul>
+								</div>
+							</div>
+							<div class="list-sort">
+								<div class="nav-title">
+									<strong>颜色</strong>
+								</div>
+								<div class="list-ulstyled color-listing white color-listing-pc">
+									<ul>
+										<li class="cur" tid="102">
+											<a style="background:#000000"><i class=""></i></a>
+										</li>
+										<li class="cur" tid="138">
+											<a style="background:#0f5eb9"><i class=""></i></a>
+										</li>
+										<li class="cur" tid="137">
+											<a style="background:#fb0b0c"><i class=""></i></a>
+										</li>
+										<li class="cur" tid="120">
+											<a style="background:#ffc6f4"><i class=""></i></a>
+										</li>
+										<li class="cur" tid="166">
+											<a style="background:#a331bf"><i class=""></i></a>
+										</li>
+										<li class="cur" tid="268">
+											<a style="background:#777777"><i class=""></i></a>
+										</li>
+										<li class="cur" tid="101">
+											<a class="white" style="background:#ffffff"><i class=""></i></a>
+										</li>
+										<li class="cur" tid="119">
+											<a style="background:#dbdbdb"><i class=""></i></a>
+										</li>
+										<li class="cur" tid="231">
+											<a style="background:#5f4b41"><i class=""></i></a>
+										</li>
+									</ul>
+								</div>
+							</div>
+							<div class="list-sort">
+								<div class="nav-title">
+									<strong>促销活动</strong>
+								</div>
+								<div class="list-ulstyled price-i-sty white list-sale-active promotion-filter">
+									<ul class="check-color float-clearfix">
+										<li tid="151"><label class="icon-checked">
+									 	<i></i>免息</label>
+										</li>
+										<li tid="670"><label class="icon-checked"><i></i>立减</label></li>
+										<li tid="145"><label class="icon-checked"><i></i>买赠</label></li>
+										<li tid="850"><label class="icon-checked"><i></i>以旧换新</label></li>
+									</ul>
+								</div>
+							</div>
+							<div class="clear-btn">
+								<a href="javasctript:;" id="clearBtn">清除所有条件</a>
+							</div>
+						</div>
+					</div>
+
+					<!--右部列表-->
+					<div class="list-cont-right">
+						<div class="list-menu">
+							<div class="title-serch">
+								智能手机
+								<span>(11)</span>
+							</div>
+							<div class="sort-style-r">
+								<span class="sort-tel">排序方式</span>
+								<ul class="sort-ul-style">
+									<li>新品</li>
+									<li>热卖</li>
+									<li id="jiagepaixun">价格
+										<div class="rank-icon">
+											<a class="icon-caret-up " order="salesprice_desc"></a>
+											<a class="icon-caret-down " order="salesprice_asc"></a>
+										</div>
+									</li>
+								</ul>
+							</div>
+						</div>
+						<!--列表详情-->
+						<div class="list-covert list-textrow">
+							<div class="row" id="sku_list">
+
+								
+								<!--产品-->
+								<div class="col-12-3 col-sm-12-6 col-xs-12-12 list-rowr">
+									<div class="list-boximg">
+										<a href="javasctript:;" id="pdphref546" target="_blank">
+											<img id="itemImage546" src="//res.samsungeshop.com.cn/resources/2018/5/16/15264003736188063_293X293.jpg"></a>
+										<div class="icon-active-box">
+											<label class="icon1 icon-orange">
+									<span>免息</span>  
+									<i class="arrow-top"></i>
+									<i class="arrow-bottom"></i>
+								</label>
+											<label class="icon1 icon-orange">
+									<span>立减</span>  
+									<i class="arrow-top"></i>
+									<i class="arrow-bottom"></i>
+								</label>
+											<label class="icon1 icon-orange">
+									<span>买赠</span>  
+									<i class="arrow-top"></i>
+									<i class="arrow-bottom"></i>
+								</label>
+											<label class="icon1 icon-orange">
+									<span>以旧换新</span>  
+									<i class="arrow-top"></i>
+									<i class="arrow-bottom"></i>
+								</label>
+										</div>
+									</div>
+
+									<div class="list-scroll-all">
+
+										<div class="product-name">
+											<h2>
+							<a href="javasctript:;" target="_blank" id="name-href-546">Galaxy S9+</a>
+						</h2>
+											<p class="red">￥5,499.00<del>  ￥6,199.00</del>
+											</p>
+										</div>
+
+										<div class="scroll-list">
+											<div class="scroll scroll-gallery events-scroll-gallery float-clearfix" data-scroll="spice.kvScroll">
+												<div class="pc-jian img-list-pdcenter">
+													<ul class="img-cor-list mg-l-imp" style="margin-left: 0px; margin-top: 0px;">
+														<li class="cur">
+															<a class="thumbnail" style="background:#66343f">
+																<i class=""></i>
+															</a>
+														</li>
+														<li class="cur">
+															<a class="thumbnail" style="background:#000000">
+																<i class=""></i>
+															</a>
+														</li>
+														<li class="cur">
+															<a class="thumbnail" style="background:#606d9b">
+																<i class=""></i>
+															</a>
+														</li>
+														<li class="cur">
+															<a class="thumbnail" style="background:#9e44b4">
+																<i class=""></i>
+															</a>
+														</li>
+														<li class="cur">
+															<a class="thumbnail" style="background:#5e869f">
+																<i class=""></i>
+															</a>
+														</li>
+													</ul>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			
+			<div class="loading">
+				加载更多
+			</div>
+
+			<!--底部-->
+			<footer>
+				<div class="foot1">
+					<div class="container">
+						<div class="foot1-left">
+							<dl>
+								<dt><a href="">我的三星</a></dt>
+								<dd>
+									<a href="">我的订单</a>
+								</dd>
+								<dd>
+									<a href="">我的积分</a>
+								</dd>
+								<dd>
+									<a href="">优惠券</a>
+								</dd>
+								<dd>
+									<a href="">个人资料</a>
+								</dd>
+								<dd>
+									<a href="">收货地址</a>
+								</dd>
+								<dd>
+									<a href="">售货网点查询</a>
+								</dd>
+							</dl>
+							<dl>
+								<dt><a href="">网上商城指南</a></dt>
+								<dd>
+									<a href="">购物指南</a>
+								</dd>
+								<dd>
+									<a href="">支付方式</a>
+								</dd>
+								<dd>
+									<a href="">订单及发票</a>
+								</dd>
+								<dd>
+									<a href="">关于配送</a>
+								</dd>
+								<dd>
+									<a href="">售后服务</a>
+								</dd>
+								<dd>
+									<a href="">会员及优惠</a>
+								</dd>
+							</dl>
+							<dl>
+								<dt><a href="">服务支持</a></dt>
+								<dd>
+									<a href="">常见问题</a>
+								</dd>
+								<dd>
+									<a href="">关于商城</a>
+								</dd>
+								<dd>
+									<a href="">关于三星</a>
+								</dd>
+								<dd>
+									<a href="">联系我们</a>
+								</dd>
+								<dd>
+									<a href="">使用条款</a>
+								</dd>
+								<dd>
+									<a href="">加入书签</a>
+								</dd>
+							</dl>
+							<div class="foot1-bottom">
+								<p>&copy; 1995-2018 三星（中国）投资有限公司 版权所有</p>
+							</div>
+						</div>
+						<div class="foot1-right">
+							<p>官方分享</p>
+							<div class="wei">
+								<div class="fenxiang weibo">
+									<a href=""></a>
+								</div>
+								<div class="fenxiang weixin">
+									<a href=""></a>
+								</div>
+							</div>
+						</div>
+
+					</div>
+				</div>
+				<div class="foot2">
+					<div class="container">
+						<div class="foot2-left">
+							<ul class="fuwu">
+								<li>
+									<a href="">服务条款</a>
+								</li>
+								<li>
+									<a href="">隐私政策</a>
+								</li>
+								<li>
+									<a href="">访客协议</a>
+								</li>
+							</ul>
+							<p>此网页最好使用IE9及以上浏览器、谷歌浏览器、苹果浏览器和其他新式浏览器进行浏览。</p>
+						</div>
+						<div class="foot2-right">
+							<p>三星（中国）投资有限公司授权北京鹏泰宝尊电子商务有限公司运营三星网上商城并销售产品</p>
+							<p>
+								<a href="">京ICP备18036817号-2</a>
+								<a href="">营业执照</a>
+							</p>
+						</div>
+					</div>
+				</div>
+			</footer>
+
+		</section>
+	</body>
+
+</html>

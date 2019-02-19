@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>注册页</title>
+		<link rel="stylesheet" type="text/css" href="../css/base.css"/>
+		<link rel="stylesheet" type="text/css" href="../css/register.css"/>
+		<script src="../lib/jquery-1.10.1.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../js/login.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../lib/jquery.cookie.js" type="text/javascript" charset="utf-8"></script>
+	</head>
+	<body>
+		<div id="register">
+			<div class="iam-wrapper ng-scope">
+				<header class="iam-header"><h1></h1></header>
+				<main class="iam-main ng-scope">
+					<div class="iam-main-inner">
+						<div class="iam-contents">
+							<h2>创建您的三星帐户</h2>
+							<div class="h2textBlock">
+								<p>通过三星帐户来获得盖乐世设备的更多功能。</p>
+							</div>
+							
+							<div class="iam-forms">
+								<form action="">
+									<fieldset id="">
+										<legend></legend>
+										<div class="ng-scope">
+											<div class="iam-input-container">
+												<label for="signUpID">邮件</label>
+												<input id="signUpID" name="signUpID" type="email">
+												<div ng-message="required" class="yanzheng"></div>
+											</div>
+											
+											<div class="iam-input-container">
+												<label for="signUpPsw">密码</label>
+												<input id="signUpPsw" name="password" type="password">
+											</div>
+											<div class="iam-input-container">
+												<label for="confirmPassword">确认密码</label>
+												<input id="confirmPassword" name="confirmPassword" type="password">
+											</div>
+										</div>
+											<div class="iam-input-container">
+												<label for="familyName">姓氏</label>
+												<input id="familyName" name="familyName" type="text">
+											</div>
+											<div class="iam-input-container">
+												<label for="givenName">名字</label>
+												<input id="givenName" name="givenName" type="text">
+											</div>
+											
+											
+											<!--出生日期-->
+											<div class="iam-input-flexbox ng-scope">
+												<div class="iam-input-container birth-year">
+													<label for="year">年</label>
+													<input id="year" name="year" type="text">
+												</div>
+												<div class="iam-input-container selectfield birth-month">
+													<select name="month" id="month">
+														<option value="月" disabled="disabled" selected="selected">月</option>
+														<option value="一月">一月</option>
+														<option value="二月">二月</option>
+														<option value="三月">三月</option>
+														<option value="四月">四月</option>
+														<option value="五月">五月</option>
+														<option value="六月">六月</option>
+														<option value="七月">七月</option>
+														<option value="八月">八月</option>
+														<option value="九月">九月</option>
+														<option value="十月">十月</option>
+														<option value="十一月">十一月</option>
+														<option value="十二月">十二月</option>
+													</select>
+												</div>
+												<div class="iam-input-container birth-day">
+													<label for="day">日</label>
+													<input id="day" name="day" type="text">
+												</div>
+												
+											</div>
+											
+											<!--验证码-->
+											<div class="simpleCaptchaArea ng-scope">
+												<div class="captchaContainer">
+													<div class="captchaImg ng-isolate-scope" id="recaptcha_image">
+														
+													</div>
+													<div class="captchaBtns">
+										<button type="button"><img src="../img/ico_reload.png" alt="获取新的代码"></button>
+											
+									
+									</div>
+												</div>
+											</div>
+											<div class="iam-input-container">
+												<label for="yanzhengma">验证码</label>
+												<input id="yanzhengma" name="yanzhengma" type="text">
+												<div ng-message="required" class="yanzheng"></div>
+											</div>
+											
+											
+										
+										<div>
+												
+										</div>
+										
+										
+										<div class="iam-btn-container">
+							<button class="iam-primary iam-button" type="button" id="zhuce">马上注册</button>
+						</div>
+										
+									</fieldset>
+									
+								</form>
+							</div>
+				
+						</div>
+					</div>
+				</main>
+			
+				<footer class="iam-footer" role="contentinfo">
+					<div class="iam-footer-row">
+						
+					</div>
+					<div class="iam-footer-row">
+						<div class="iam-footer-inner">
+							<div class="iam-footer-links">
+								<a href="javasctript:;" target="_blank">条款和条件</a>
+								
+								<a href="javasctript:;">三星隐私权政策</a>
+								<a href="javasctript:;">联系我们</a>
+							</div>
+							<address class="iam-footer-address">© Samsung Electronics Co., Ltd.</address>	
+						</div>
+					</div>
+				</footer>
+			
+			</div>
+		
+			
+			
+			
+			
+		</div>
+	</body>
+</html>

@@ -1,0 +1,486 @@
+html,body{
+	overflow-x: hidden;
+	width: 100%;
+	height: 100%;
+}
+#wrapper {
+    position: relative;
+    overflow: hidden;
+}
+.header.header-fixed {
+    width: 100%;
+    top: 0;
+    left: 0;
+    position: fixed;
+    z-index: 999;
+    min-width: 320px;
+}
+
+.header {
+    padding: 0;
+    background: #fff;
+    border-bottom: 1px solid #eee;
+}
+.header .nav-container {
+    max-width: 1220px;
+    padding: 0 30px;
+    margin: 0 auto;
+}
+.float-clearfix {
+    clear: both!important;
+}
+.header-simplify .nav-bar {
+    width: auto;
+}
+.float-left {
+    float: left!important;
+}
+.header-simplify .sam-logo {
+    width: 130px;
+    height: 64px;
+    padding: 0;
+    position: static;
+    left: 0;
+    margin-left: 0;
+}
+.nav-bar>* {
+    vertical-align: middle;
+}
+.header .sam-logo a {
+    display: block;
+    height: 100%;
+}
+a {
+    color: #337ab7;
+    text-decoration: none;
+    cursor: pointer;
+}
+.header .sam-logo a img {
+    display: block;
+    width: 100%;
+    position: relative;
+    top: 21px;
+}
+img {
+    vertical-align: middle;
+    border: 0;
+}
+.header-fixed .header-right {
+    position: relative;
+    width: auto;
+    left: auto;
+    left: auto;
+    height: auto;
+}
+.float-right {
+    float: right!important;
+}
+.header-simplify .header-right a {
+    display: block;
+    line-height: 64px;
+    font-size: 15px;
+    color: #363636;
+    letter-spacing: 0;
+    float: left;
+    margin: 0 16px;
+}
+
+.header-simplify .styles-tel {
+    cursor: default!important;
+}
+.header-simplify .styles-tel i {
+    margin-right: 5px;
+}
+.header-simplify .header-right i {
+    position: relative;
+}
+.header .icon-phone {
+    width: 16px;
+    height: 16px;
+    background-position: -20px 0 !important;
+    top: 3px;
+}
+.top-nav .icon, .header .icon {
+    background: url(../img/icon2.png);
+    display: inline-block;
+}
+.header .icon-service {
+    width: 18px;
+    height: 18px;
+    background-position: -46px 0;
+}
+.container {
+    position: relative;
+    z-index: 1;
+    margin-top: 60px;
+}
+.container {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+.estore-nav {
+    position: static;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    min-height: 580px;
+}
+.estore-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+.img-box {
+    position: absolute;
+    height: 100%;
+    left: 50%;
+    width: 1920px;
+    margin-left: -960px;
+}
+.estore-con {
+    max-width: 1280px;
+    margin: 0 auto;
+    position: relative;
+}
+.estore-con .con-title {
+    color: #fff;
+}
+.estore-con>div {
+    float: left;
+}
+.estore-con .title-left-logo {
+    position: absolute;
+    top: -45px;
+    width: 100px;
+    z-index: 12;
+}
+.estore-con .con-title>p {
+    padding-left: 30px;
+}
+
+.estore-con .title-left-welcome {
+    font-size: 60px;
+    font-weight: 900;
+    padding-top: 252px;
+}
+.estore-con .con-title>p {
+    padding-left: 30px;
+}
+.estore-con .title-left-discount {
+    font-size: 20px;
+}
+.estore-con .con-landfall-mode .mode-right-box {
+    width: 410px;
+    height: 524px;
+    background: #fff;
+    margin: 44px 0 0 84px;
+    text-align: center;
+}
+.estore-con .con-landfall-mode .mode-right-box .mode-right-title {
+    width: 100%;
+    font-size: 30px;
+    font-weight: 900;
+    padding: 80px 0 40px 0;
+}
+.con-landfall-mode ul {
+    overflow: hidden;
+    display: inline-block;
+}
+.con-landfall-mode ul li {
+    float: left;
+    margin: 0 18px;
+}
+.con-landfall-mode .mode-right-no-account {
+    font-size: 20px;
+    color: #444;
+    padding: 68px 0 30px 0;
+    line-height: 20px;
+}
+.con-landfall-mode .mode-right-no-account span {
+    display: inline-block;
+    vertical-align: middle;
+    width: 88px;
+    height: 1px;
+    background: #dfdfdf;
+    margin: 0 20px 0 20px;
+}
+.con-landfall-mode .mode-right-register {
+    display: inline-block;
+    width: 194px;
+    height: 56px;
+    text-align: center;
+    line-height: 56px;
+    font-size: 14px;
+    color: #fff;
+    background: #1429a0;
+    border-radius: 30px;
+}
+.con-landfall-mode .mode-right-box>a {
+    display: inline-block;
+}
+.con-landfall-mode .mode-right-help {
+    font-size: 15px;
+    color: #1429a0;
+    text-decoration: underline;
+    margin-top: 30px;
+}
+
+
+
+
+/*底部导航*/
+.footer-text {
+    margin-top: 60px;
+    margin-bottom: 30px;
+}
+.footer-text {
+    max-width: 1280px;
+    margin: 160px auto 0;
+    padding: 20px 0!important;
+    border-top: 1px solid #e5e5e5;
+}
+.footer-text p {
+    margin: 0;
+    text-align: center;
+    font-size: 12px;
+    color: #666;
+    line-height: 18px;
+}
+.footer-text p {
+    margin-top: 20px;
+    line-height: 16px;
+}
+
+
+/*注册登录时*/
+.yanzheng{
+	font-size: 14px;
+	color: red;
+	text-align: right;
+}
+
+
+
+
+
+
+
+
+
+/*第二层登录页*/
+#login2{
+	background-color: #E6E6E6;
+	width: 100%;
+	height: auto;
+}
+.iam-signinUI main {
+    padding-top: 90px;
+}
+main {
+    position: relative;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    padding: 120px 0 0;
+    z-index: 2;
+}
+.iam-main-inner {
+    position: relative;
+    width: 600px;
+    margin: auto;
+    padding: 60px;
+    background: #fff;
+}
+.iam-wrapper h2 {
+    margin-bottom: 10px;
+    color: #1428a0;
+    font-weight: bold;
+    font-size: 40px;
+}
+fieldset {
+    border: 0 none;
+}
+legend {
+    display: none;
+}
+.iam-input-container {
+    display: block;
+    position: relative;
+    z-index: 1;
+    margin: 2.215em 0;
+}
+.iam-input-container > label {
+    position: absolute;
+    top: -3px;
+    left: auto;
+    max-width: 100%;
+    height: 2.7em;
+    line-height: 2.7em;
+    color: #767676;
+    font-size: 1.142em;
+    cursor: text;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    -webkit-transition: all .2s;
+    transition: all .2s;
+    /* z-index: -1; */
+    pointer-events: none;
+    -webkit-font-smoothing: antialiased;
+    -webkit-transform: translate3d(0, 3px, 0) scale(1);
+    transform: translate3d(0, 3px, 0) scale(1);
+    -webkit-transform-origin: left top;
+    transform-origin: left top;
+}
+.iam-input-container > input, .iam-input-container > select, .iam-input-container > textarea {
+    display: block;
+    width: 100%;
+    color: #000;
+    border: none;
+    border-bottom: 1px solid #DDD;
+    background-color: transparent;
+    box-sizing: border-box;
+}
+.iam-input-container > input, .iam-input-container > textarea {
+    padding: 0;
+}
+.iam-input-container > input, .iam-input-container > select {
+    height: 2.7em;
+    line-height: 1.2;
+    font-size: 1.142em;
+}
+.iam-signinUI #rememberID {
+    margin-top: -16px;
+}
+.iam-radio {
+    width: 100%;
+    box-sizing: border-box;
+    clear: both;
+    margin-bottom: .625em;
+    padding-left: 1.875em;
+    background: url(../img/ico_check.png) no-repeat right bottom;
+    background-size: 0;
+}
+.iam-radio input[type=checkbox]:not(old), .iam-radio input[type=radio]:not(old) {
+    margin: 0;
+    padding: 0;
+    margin-left: -28px;
+    background-color: transparent;
+    border: none;
+    border: 0;
+    border-color: transparent;
+    vertical-align: bottom;
+    width: 22px;
+    height: 22px;
+    position: relative;
+    z-index: 2;
+    opacity: 0;
+}
+.iam-radio label {
+    cursor: pointer;
+    -webkit-font-smoothing: antialiased;
+    margin-left: -1.6em;
+    line-height: 1.3;
+    box-sizing: border-box;
+    vertical-align: -webkit-baseline-middle;
+}
+.iam-radio input[type=checkbox]:not(old):checked + label > span {
+    background: #1428a0 url(../img/ico_check.png) no-repeat center center;
+    background-size: 22px;
+    border-color: #1428a0;
+}
+.iam-radio input[type=checkbox]:not(old) + label > span {
+    display: inline-table;
+}
+.iam-radio input[type=checkbox]:not(old) + label > span {
+    border: 2px solid #bdc3c9;
+}
+.iam-radio input[type=checkbox]:not(old) + label > span {
+    display: inline-block;
+    width: 1.375em;
+    height: 1.375em;
+    margin: 0 .5em 0 0;
+    border-radius: 3px;
+    vertical-align: bottom;
+}
+.iam-signIn-banner {
+    margin: 35px 0 0;
+}
+
+/*登录按钮*/
+.iam-signIn-button {
+    width: 100%;
+    margin: 3.75em 0 2.5em;
+    text-align: center;
+}
+.iam-signIn-button .iam-button {
+    margin: 0;
+    background: transparent;
+    border: 2px solid #000;
+    color: #000;
+}
+.iam-button {
+    min-height: 3.125em;
+    min-width: 180px;
+    padding: .5em 1.5em;
+    background: transparent;
+    border: 1px solid #e1e1e1;
+    border-radius: .5em;
+    color: #000;
+    font-weight: bold;
+    font-size: 1em;
+    line-height: 1.2;
+    letter-spacing: .01em;
+    word-break: break-all;
+    text-transform: uppercase;
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+    vertical-align: middle;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+    text-align: center;
+    box-sizing: border-box;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    font-style: inherit;
+    font-variant: inherit;
+    font-family: inherit;
+    text-decoration: none;
+}
+.iam-signIn-link {
+    text-align: center;
+}
+.iam-signIn-link {
+    width: 100%;
+}
+.iam-signIn-link a:first-child {
+    display: block;
+    margin-bottom: 4px;
+}
+.btn-close {
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    width: 24px;
+    height: 24px;
+    overflow: hidden;
+    text-indent: -999em;
+    background: url(../img/btn_close.png) no-repeat;
+    background-size: 24px;
+}
+button {
+    border: 0;
+    text-transform: uppercase;
+    cursor: pointer;
+}

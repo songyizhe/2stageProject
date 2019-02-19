@@ -1,0 +1,1072 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>三星网上商城</title>
+		<link rel="stylesheet" type="text/css" href="css/base.css" />
+		<link rel="stylesheet" type="text/css" href="css/common.css" />
+		<link rel="stylesheet" type="text/css" href="css/index.css" />
+		<script src="lib/jquery-1.10.1.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/header.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/index.js" type="text/javascript" charset="utf-8"></script>
+		<script src="lib/jquery.cookie.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/js.js" type="text/javascript" charset="utf-8"></script>
+	</head>
+
+	<body>
+		<script>
+        $(document).ready(function(){
+        	if ($.cookie("username")) {
+        		
+        		
+        		$('#user').html($.cookie("username"));
+        		$('#user').parent().attr('href','javasctript:;');
+        		$('#login').hover(function(){
+        			$('.yincang').css('display','block');
+        		
+        		},function(){
+        			$('.yincang').css('display','none');
+        		});
+        		
+        		$('#user-out').on('click',function(){
+
+					$.removeCookie('username',{path:'/'});
+					console.log(111);
+					$('#user').html('登录');
+        			$('#user').parent().attr('href','html/login.html');
+        			$('.yincang').css('display','none');
+        			$('#login').unbind();
+        			
+				});
+        	}        
+        });
+    </script>
+    
+    
+    
+		<section id="box">
+			<!--头部-->
+			<header>
+				<section class="container">
+					<div class="header-l">
+						<a href="index.html">三星网上商城</a>
+					</div>
+					<div class="header-r">
+						<a href="index.html">三星官网
+							<i><img src="img/icon.png"/></i></a>
+					</div>
+				</section>
+			</header>
+
+			<!--导航-->
+			<section class="header-2">
+				<section class="container">
+					<!--导航栏-->
+					<ul id="nav">
+						<li>
+							<a href="html/list.html">智能手机</a>
+							<div class="sub-menu">
+								<div class="container">
+									<ul class="sub-menu1">
+										<li>
+											<img src="img/sub1.jpg" />
+											<a href="">Galaxy Note9</a>
+										</li>
+										<li>
+											<img src="img/sub2.jpg" />
+											<a href="">Galaxy S9</a>
+										</li>
+										<li>
+											<img src="img/sub3.jpg" />
+											<a href="">Galaxy A8s</a>
+										</li>
+										<li>
+											<img src="img/sub4.jpg" />
+											<a href="">Galaxy A9s</a>
+										</li>
+									</ul>
+									<ul class="sub-menu2">
+										<li>
+											<a href="">Galaxy S系列</a>
+										</li>
+										<li>
+											<a href="">Galaxy Note系列</a>
+										</li>
+										<li>
+											<a href="">Galaxy A系列</a>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</li>
+						<li>
+							<a href="">可穿戴设备</a>
+							<div class="sub-menu">
+								<div class="container">
+									<ul class="sub-menu1">
+										<li>
+											<img src="img/biao1.jpg" />
+											<a href="">Samsung Galaxy Watch 蓝牙版42mm玫瑰金</a>
+										</li>
+										<li>
+											<img src="img/biao2.jpg" />
+											<a href="">Samsung Galaxy Watch LTE版 46mm钛泽银</a>
+										</li>
+										<li>
+											<img src="img/biao2.jpg" />
+											<a href="">Samsung Galaxy Watch 蓝牙版46mm钛泽银</a>
+										</li>
+										<li>
+											<img src="img/biao4.jpg" />
+											<a href="">Samsung Gear Sport 智能手表</a>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</li>
+						<li>
+							<a href="">个人电脑</a>
+							<div class="sub-menu">
+								<div class="container">
+									<ul class="sub-menu1">
+										<li>
+											<img src="img/diannao1.jpg" />
+											<a href="">Galaxy Tab S4 4G</a>
+										</li>
+										<li>
+											<img src="img/diannao2.jpg" />
+											<a href="">盖乐世 Tab E</a>
+										</li>
+										<li>
+											<img src="img/diannao3.jpg" />
+											<a href="">三星笔记本星曜 930XBE-K03</a>
+										</li>
+										<li>
+											<img src="img/diannao4.jpg" />
+											<a href="">三星笔记本星曜Pen Pro 930SBE-K01</a>
+										</li>
+									</ul>
+									<ul class="sub-menu2">
+										<li>
+											<a href="">Galaxy S系列</a>
+										</li>
+										<li>
+											<a href="">Galaxy Note系列</a>
+										</li>
+										<li>
+											<a href="">Galaxy A系列</a>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</li>
+						<li>
+							<a href="">空气净化器</a>
+							<div class="sub-menu">
+								<div class="container">
+									<ul class="sub-menu1">
+										<li>
+											<img src="img/jing1.jpg" />
+											<a href="">三星空气净化器KJ350G-K3000WU</a>
+										</li>
+										<li>
+											<img src="img/jing2.jpg" />
+											<a href="">三星空气净化器KJ719F-K7580WW</a>
+										</li>
+										
+									</ul>
+									<ul class="sub-menu2">
+										<li>
+											<a href="">JUPITER 系列</a>
+										</li>
+										<li>
+											<a href="">AX7000 系列</a>
+										</li>
+										
+									</ul>
+								</div>
+							</div>
+						</li>
+						<li>
+							<a href="">配件</a>
+							<div class="sub-menu">
+								<div class="container">
+									<ul class="sub-menu1">
+										<li>
+											<img src="img/pei1.jpg" />
+											<a href="">盖乐世 Note9 LED智能保护套</a>
+										</li>
+										<li>
+											<img src="img/pei2.jpg" />
+											<a href="">盖乐世 Note9 立式镜面保护套</a>
+										</li>
+										<li>
+											<img src="img/pei3.jpg" />
+											<a href="">三星 旅行充电器 (Type C) </a>
+										</li>
+										<li>
+											<img src="img/pei4.jpg" />
+											<a href="">Level In ANC 降噪耳机</a>
+										</li>
+									</ul>
+									<ul class="sub-menu2">
+										<li>
+											<a href="">保护类</a>
+										</li>
+										<li>
+											<a href="">电池/充电器</a>
+										</li>
+										<li>
+											<a href="">耳机/音响</a>
+										</li>
+										<li>
+											<a href="">移动电源</a>
+										</li>
+										<li>
+											<a href="">存储类</a>
+										</li>
+										<li>
+											<a href="">其它</a>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</li>
+					</ul>
+					<!--logo-->
+					<h1>
+						<a href="index.html">
+							<img src="img/logo.png"/>
+						</a>
+					</h1>
+					<!--搜索、购物车-->
+					<ul class="nav-right">
+						<li class="liserch">
+							<a href="">
+								<i class="icon icon-serch"></i>
+							</a>
+						</li>
+						<li class="licart">
+							<a href="###">
+								<i class="icon icon-cart"></i>
+							</a>
+						</li>
+					</ul>
+					<!--登录电话客服-->
+					<ul class="nav-right2">
+						<li>
+							<a href="">
+								<i class="icon icon-tel"></i> 400 071 8899
+							</a>
+						</li>
+						<li>
+							<a href="">
+								<i class="icon icon-service"></i> 在线客服
+							</a>
+						</li>
+						<li id="login">
+							<a href="html/login.html">
+								<i class="icon icon-login"></i> <span id="user">登录</span>
+							</a>
+							<div class="yincang" style="display: none;">
+								<ul>
+									<li><a href="javasctript:;">我的订单</a></li>
+									<li><a href="javasctript:;">我的积分</a></li>
+									<li><a href="javasctript:;">优惠券</a></li>
+									<li><a href="javasctript:;">个人资料</a></li>
+									<li id="user-out"><a href="javasctript:;">退出</a></li>
+								</ul>
+							</div>
+						</li>
+					</ul>
+				</section>
+			</section>
+
+			<!--轮播图-->
+			<section id="banner">
+				<!--<ul class="banner-in">
+					<li><a href="javasctript:;"><img src="img/banner1.jpg"/></a></li>
+					<li><a href="javasctript:;"><img src="img/banner2.jpg"/></a></li>
+					<li><a href="javasctript:;"><img src="img/banner3.jpg"/></a></li>
+					<li><a href="javasctript:;"><img src="img/banner4.jpg"/></a></li>
+					<li><a href="javasctript:;"><img src="img/banner5.jpg"/></a></li>
+				</ul>
+				<div class="xiaodian">
+					<span class="active2"></span>
+					<span></span>
+					<span></span>
+					<span></span>
+					<span></span>
+				</div>-->
+				
+				<div id="imglist">
+				<ul>
+					<li><a href="javasctript:;"><img src="img/banner1.jpg"/></a></li>
+					<li><a href="javasctript:;"><img src="img/banner2.jpg"/></a></li>
+					<li><a href="javasctript:;"><img src="img/banner3.jpg"/></a></li>
+					<li><a href="javasctript:;"><img src="img/banner4.jpg"/></a></li>
+					<li><a href="javasctript:;"><img src="img/banner5.jpg"/></a></li>
+				
+				</ul>
+			</div>
+			<!--焦点图-->
+			<p id="light">
+				<span class="active"></span>
+				<span></span>
+				<span></span>
+				<span></span>
+				<span></span>
+				
+			</p>
+			<!--上下按钮-->
+			<!--<div id="posibtn">
+				<p id="prev">&lt;</p>
+				<p id="next">&gt;</p>
+			</div>-->
+			</section>
+
+			<!--轮播图下-->
+			<section class="banner-b">
+				<div class="tu1">
+					<a href="javasctrip:;"><img src="img/tu1.jpg" /></a>
+				</div>
+				<div class="tu2">
+					<a href="javasctrip:;"><img src="img/tu2.jpg" /></a>
+				</div>
+				<div class="tu3">
+					<a href="javasctrip:;"><img src="img/tu3.jpg" /></a>
+				</div>
+			</section>
+
+			<!--配件-->
+			<section class="peijian">
+				<div class="out">
+					<p class="title">配件</p>
+					<a href="javasctript:;" class="more">更多></a>
+					</p>
+					<ul class="num num-peijian">
+						<li class="active">保护类</li>
+						<li>耳机/音响</li>
+						<li>电池/充电器</li>
+					</ul>
+					<ul class="img" id="peijian">
+						<li id="baohu">
+							
+						</li>
+						<li style="opacity: 0;">
+							<div class="fen8-2">
+								<a href="javasctript:;">
+									<img src="img/peijian2.jpg" / style="opacity: 1;">
+								</a>
+								<h3 data-name="盖乐世 Note9 插卡式保护套">盖乐世 Note9 插卡式保护套</h3>
+								<p>¥428.00</p>
+							</div>
+							<div class="fen8-2">
+								<a href="javasctript:;">
+									<img src="img/peijian2.jpg" / style="opacity: 1;">
+								</a>
+								<h3 data-name="盖乐世 Note9 插卡式保护套">盖乐世 Note9 插卡式保护套</h3>
+								<p>¥428.00</p>
+							</div>
+							<div class="fen8-2">
+								<a href="javasctript:;">
+									<img src="img/peijian2.jpg" / style="opacity: 1;">
+								</a>
+								<h3 data-name="盖乐世 Note9 插卡式保护套">盖乐世 Note9 插卡式保护套</h3>
+								<p>¥428.00</p>
+							</div>
+							<div class="fen8-2">
+								<a href="javasctript:;">
+									<img src="img/peijian2.jpg" / style="opacity: 1;">
+								</a>
+								<h3 data-name="盖乐世 Note9 插卡式保护套">盖乐世 Note9 插卡式保护套</h3>
+								<p>¥428.00</p>
+							</div>
+						</li>
+						<li>
+								<div class="fen8-2">
+								<a href="javasctript:;">
+									<img src="img/peijian3.jpg" / style="opacity: 1;">
+								</a>
+								<h3 data-name="盖乐世 Note9 插卡式保护套">盖乐世 Note9 插卡式保护套</h3>
+								<p>¥428.00</p>
+							</div>
+							<div class="fen8-2">
+								<a href="javasctript:;">
+									<img src="img/peijian3.jpg" / style="opacity: 1;">
+								</a>
+								<h3 data-name="盖乐世 Note9 插卡式保护套">盖乐世 Note9 插卡式保护套</h3>
+								<p>¥428.00</p>
+							</div>
+							<div class="fen8-2">
+								<a href="javasctript:;">
+									<img src="img/peijian3.jpg" / style="opacity: 1;">
+								</a>
+								<h3 data-name="盖乐世 Note9 插卡式保护套">盖乐世 Note9 插卡式保护套</h3>
+								<p>¥428.00</p>
+							</div>
+							<div class="fen8-2">
+								<a href="javasctript:;">
+									<img src="img/peijian3.jpg" / style="opacity: 1;">
+								</a>
+								<h3 data-name="盖乐世 Note9 插卡式保护套">盖乐世 Note9 插卡式保护套</h3>
+								<p>¥428.00</p>
+							</div>
+						</li>
+					</ul>
+					<div id="arr-left">
+						<a href="javasctript:;" class="left"></a>
+					</div>
+					<div id="arr-right">
+						<a href="javasctript:;" class="right"></a>
+					</div>
+				</div>
+			</section>
+
+			<!--活动-->
+			<section class="huodong">
+				<p class="title">活动专区</p>
+				<div class="img">
+					<img src="img/huodong.jpg"/>
+				</div>
+			</section>
+			
+			<!--本周热销-->
+			<section class="hot">
+				<p class="title">本周热销</p>
+				<div class="hot-bottom">
+					<ul>
+						<li style="width: 16.666%;">
+							<div class="hotSelling">
+								<a href="javasctript:;">
+									<img src="img/rexiao1.jpg" />
+								</a>
+								<h3>Galaxy Note9
+									<p class="remarks">下单优惠400元，以旧换新至高补贴400元</p>
+								</h3>
+								
+								<p>¥6999.00</p>
+							</div>
+							<div class="addnav">
+								<label class="icon-colorLan">
+									<span>立减</span>
+									<i class="colorLan-right"></i>
+									<i class="colorLan-left"></i>
+								</label>
+							</div>
+						</li>
+						<li style="width: 16.666%;">
+							<div class="hotSelling">
+								<a href="javasctript:;">
+									<img src="img/rexiao2.jpg" />
+								</a>
+								<h3>Galaxy S9+
+									<p class="remarks">直降700元，享12期免息</p>
+								</h3>
+								
+								<p>¥5499.00
+									<del class="oldprice">¥6199.00</del>
+								</p>
+							</div>
+							<div class="addnav">
+								<label class="icon-colorLan">
+									<span>立减</span>
+									<i class="colorLan-right"></i>
+									<i class="colorLan-left"></i>
+								</label>
+							</div>
+						</li>
+						<li style="width: 16.666%;">
+							<div class="hotSelling">
+								<a href="javasctript:;">
+									<img src="img/rexiao3.jpg" />
+								</a>
+								<h3>Galaxy A8s
+									<p class="remarks">黑瞳全视屏、后置三摄、7.4mm纤薄机身</p>
+								</h3>
+								
+								<p>¥2799.00</p>
+							</div>
+							<div class="addnav">
+								<label class="icon-colorLan iconZi">
+									<span>新品</span>
+									<i class="iconZi-right"></i>
+									<i class="iconZi-left"></i>
+								</label>
+							</div>
+						</li>
+						<li style="width: 16.666%;">
+							<div class="hotSelling">
+								<a href="javasctript:;">
+									<img src="img/rexiao4.jpg" />
+								</a>
+								<h3>512GB EVO升级版+MicroSD存储卡</h3>
+								
+								<p>¥1099.00
+									<del class="oldprice">¥1699.00</del>
+								</p>
+							</div>
+							<div class="addnav">
+								<label class="icon-colorLan iconZi">
+									<span>热销</span>
+									<i class="iconZi-right"></i>
+									<i class="iconZi-left"></i>
+								</label>
+							</div>
+						</li>
+						<li style="width: 16.666%;">
+							<div class="hotSelling">
+								<a href="javasctript:;">
+									<img src="img/rexiao5.jpg" />
+								</a>
+								<h3>盖乐世 S8
+									<p class="remarks">下单优惠700元，享12期免息</p>
+								</h3>
+								
+								<p>¥3999.00</p>
+							</div>
+							<div class="addnav">
+								<label class="icon-colorLan">
+									<span>立减</span>
+									<i class="colorLan-right"></i>
+									<i class="colorLan-left"></i>
+								</label>
+							</div>
+						</li>
+						<li style="width: 16.666%;">
+							<div class="hotSelling">
+								<a href="javasctript:;">
+									<img src="img/rexiao6.jpg" />
+								</a>
+								<h3>Galaxy A9s
+									<p class="remarks">下单优惠500元，享至高12期免息分期</p>
+								</h3>
+								
+								<p>¥3499.00</p>
+							</div>
+							<div class="addnav">
+								<label class="icon-colorLan">
+									<span>立减</span>
+									<i class="colorLan-right"></i>
+									<i class="colorLan-left"></i>
+								</label>
+							</div>
+						</li>
+					</ul>
+					<div id="hot-left">
+						<a href="javasctript:;" class="left"></a>
+					</div>
+					<div id="hot-right">
+						<a href="javasctript:;" class="right"></a>
+					</div>
+				</div>
+				
+			</section>
+			
+			<!--banner 下-->
+			<div class="subbanner">
+				<a href="javasctript:;">
+					<img src="img/subbanner.png"/>
+				</a>
+			</div>
+			
+			<!--为你推荐-->
+			<section class="tuijian">
+				<div class="out-1">
+					<p class="title">为你推荐</p>
+					<ul class="img-1" id="tuijian">
+						<li>
+							<div class="fen8-2">
+								<a href="javasctript:;">
+									<img src="img/tuijian1.jpg" / style="opacity: 1;">
+								</a>
+								<h3 data-name="Galaxy Note9">Galaxy Note9
+								<p class="remarks">下单优惠400元，以旧换新至高补贴400元</p>
+								</h3>
+								<p>¥6999.00</p>
+								<div class="addnav">
+									<label class="icon-colorLan">
+										<span>立减</span>
+										<i class="colorLan-right"></i>
+										<i class="colorLan-left"></i>
+									</label>
+								</div>
+							</div>
+							<div class="fen8-2">
+								<a href="javasctript:;">
+									<img src="img/tuijian1.jpg" / style="opacity: 1;">
+								</a>
+								<h3 data-name="Galaxy Note9">Galaxy Note9
+								<p class="remarks">下单优惠400元，以旧换新至高补贴400元</p>
+								</h3>
+								<p>¥6999.00</p>
+								<div class="addnav">
+									<label class="icon-colorLan">
+										<span>立减</span>
+										<i class="colorLan-right"></i>
+										<i class="colorLan-left"></i>
+									</label>
+								</div>
+							</div>
+							<div class="fen8-2">
+								<a href="javasctript:;">
+									<img src="img/tuijian1.jpg" / style="opacity: 1;">
+								</a>
+								<h3 data-name="Galaxy Note9">Galaxy Note9
+								<p class="remarks">下单优惠400元，以旧换新至高补贴400元</p>
+								</h3>
+								<p>¥6999.00</p>
+								<div class="addnav">
+									<label class="icon-colorLan">
+										<span>立减</span>
+										<i class="colorLan-right"></i>
+										<i class="colorLan-left"></i>
+									</label>
+								</div>
+							</div>
+							<div class="fen8-2">
+								<a href="javasctript:;">
+									<img src="img/tuijian1.jpg" / style="opacity: 1;">
+								</a>
+								<h3 data-name="Galaxy Note9">Galaxy Note9
+								<p class="remarks">下单优惠400元，以旧换新至高补贴400元</p>
+								</h3>
+								<p>¥6999.00</p>
+								<div class="addnav">
+									<label class="icon-colorLan">
+										<span>立减</span>
+										<i class="colorLan-right"></i>
+										<i class="colorLan-left"></i>
+									</label>
+								</div>
+							</div>
+						</li>
+						<li>
+							<div class="fen8-2">
+								<a href="javasctript:;">
+									<img src="img/tuijian2.jpg" / style="opacity: 1;">
+								</a>
+								<h3 data-name="Galaxy Note9">Galaxy Note9
+								<p class="remarks">下单优惠400元，以旧换新至高补贴400元</p>
+								</h3>
+								<p>¥6999.00</p>
+								<div class="addnav">
+									<label class="icon-colorLan">
+										<span>立减</span>
+										<i class="colorLan-right"></i>
+										<i class="colorLan-left"></i>
+									</label>
+								</div>
+							</div>
+							<div class="fen8-2">
+								<a href="javasctript:;">
+									<img src="img/tuijian2.jpg" / style="opacity: 1;">
+								</a>
+								<h3 data-name="Galaxy Note9">Galaxy Note9
+								<p class="remarks">下单优惠400元，以旧换新至高补贴400元</p>
+								</h3>
+								<p>¥6999.00</p>
+								<div class="addnav">
+									<label class="icon-colorLan">
+										<span>立减</span>
+										<i class="colorLan-right"></i>
+										<i class="colorLan-left"></i>
+									</label>
+								</div>
+							</div>
+							<div class="fen8-2">
+								<a href="javasctript:;">
+									<img src="img/tuijian2.jpg" / style="opacity: 1;">
+								</a>
+								<h3 data-name="Galaxy Note9">Galaxy Note9
+								<p class="remarks">下单优惠400元，以旧换新至高补贴400元</p>
+								</h3>
+								<p>¥6999.00</p>
+								<div class="addnav">
+									<label class="icon-colorLan">
+										<span>立减</span>
+										<i class="colorLan-right"></i>
+										<i class="colorLan-left"></i>
+									</label>
+								</div>
+							</div>
+							<div class="fen8-2">
+								<a href="javasctript:;">
+									<img src="img/tuijian4.jpg" / style="opacity: 1;">
+								</a>
+								<h3 data-name="Galaxy Note9">Galaxy Note9
+								<p class="remarks">下单优惠400元，以旧换新至高补贴400元</p>
+								</h3>
+								<p>¥6999.00</p>
+								<div class="addnav">
+									<label class="icon-colorLan">
+										<span>立减</span>
+										<i class="colorLan-right"></i>
+										<i class="colorLan-left"></i>
+									</label>
+								</div>
+							</div>
+						</li>
+						<li>
+							<div class="fen8-2">
+								<a href="javasctript:;">
+									<img src="img/tuijian3.jpg" / style="opacity: 1;">
+								</a>
+								<h3 data-name="Galaxy Note9">Galaxy Note9
+								<p class="remarks">下单优惠400元，以旧换新至高补贴400元</p>
+								</h3>
+								<p>¥6999.00</p>
+								<div class="addnav">
+									<label class="icon-colorLan">
+										<span>立减</span>
+										<i class="colorLan-right"></i>
+										<i class="colorLan-left"></i>
+									</label>
+								</div>
+							</div>
+							<div class="fen8-2">
+								<a href="javasctript:;">
+									<img src="img/tuijian3.jpg" / style="opacity: 1;">
+								</a>
+								<h3 data-name="Galaxy Note9">Galaxy Note9
+								<p class="remarks">下单优惠400元，以旧换新至高补贴400元</p>
+								</h3>
+								<p>¥6999.00</p>
+								<div class="addnav">
+									<label class="icon-colorLan">
+										<span>立减</span>
+										<i class="colorLan-right"></i>
+										<i class="colorLan-left"></i>
+									</label>
+								</div>
+							</div>
+							<div class="fen8-2">
+								<a href="javasctript:;">
+									<img src="img/tuijian3.jpg" / style="opacity: 1;">
+								</a>
+								<h3 data-name="Galaxy Note9">Galaxy Note9
+								<p class="remarks">下单优惠400元，以旧换新至高补贴400元</p>
+								</h3>
+								<p>¥6999.00</p>
+								<div class="addnav">
+									<label class="icon-colorLan">
+										<span>立减</span>
+										<i class="colorLan-right"></i>
+										<i class="colorLan-left"></i>
+									</label>
+								</div>
+							</div>
+							<div class="fen8-2">
+								<a href="javasctript:;">
+									<img src="img/tuijian3.jpg" / style="opacity: 1;">
+								</a>
+								<h3 data-name="Galaxy Note9">Galaxy Note9
+								<p class="remarks">下单优惠400元，以旧换新至高补贴400元</p>
+								</h3>
+								<p>¥6999.00</p>
+								<div class="addnav">
+									<label class="icon-colorLan">
+										<span>立减</span>
+										<i class="colorLan-right"></i>
+										<i class="colorLan-left"></i>
+									</label>
+								</div>
+							</div>
+						</li>
+						<li>
+							<div class="fen8-2">
+								<a href="javasctript:;">
+									<img src="img/tuijian4.jpg" / style="opacity: 1;">
+								</a>
+								<h3 data-name="Galaxy Note9">Galaxy Note9
+								<p class="remarks">下单优惠400元，以旧换新至高补贴400元</p>
+								</h3>
+								<p>¥6999.00</p>
+								<div class="addnav">
+									<label class="icon-colorLan">
+										<span>立减</span>
+										<i class="colorLan-right"></i>
+										<i class="colorLan-left"></i>
+									</label>
+								</div>
+							</div>
+							<div class="fen8-2">
+								<a href="javasctript:;">
+									<img src="img/tuijian4.jpg" / style="opacity: 1;">
+								</a>
+								<h3 data-name="Galaxy Note9">Galaxy Note9
+								<p class="remarks">下单优惠400元，以旧换新至高补贴400元</p>
+								</h3>
+								<p>¥6999.00</p>
+								<div class="addnav">
+									<label class="icon-colorLan">
+										<span>立减</span>
+										<i class="colorLan-right"></i>
+										<i class="colorLan-left"></i>
+									</label>
+								</div>
+							</div>
+							<div class="fen8-2">
+								<a href="javasctript:;">
+									<img src="img/tuijian4.jpg" / style="opacity: 1;">
+								</a>
+								<h3 data-name="Galaxy Note9">Galaxy Note9
+								<p class="remarks">下单优惠400元，以旧换新至高补贴400元</p>
+								</h3>
+								<p>¥6999.00</p>
+								<div class="addnav">
+									<label class="icon-colorLan">
+										<span>立减</span>
+										<i class="colorLan-right"></i>
+										<i class="colorLan-left"></i>
+									</label>
+								</div>
+							</div>
+							<div class="fen8-2">
+								<a href="javasctript:;">
+									<img src="img/tuijian4.jpg" / style="opacity: 1;">
+								</a>
+								<h3 data-name="Galaxy Note9">Galaxy Note9
+								<p class="remarks">下单优惠400元，以旧换新至高补贴400元</p>
+								</h3>
+								<p>¥6999.00</p>
+								<div class="addnav">
+									<label class="icon-colorLan">
+										<span>立减</span>
+										<i class="colorLan-right"></i>
+										<i class="colorLan-left"></i>
+									</label>
+								</div>
+							</div>
+						</li>
+					</ul>
+					<ul class="num-1 num-tuijian">
+						<li class="active">智能手机</li>
+						<li>可穿戴设备</li>
+						<li>平板电脑</li>
+						<li>笔记本电脑</li>
+					</ul>
+					<div id="tuijian-left">
+						<a href="javasctript:;" class="left"></a>
+					</div>
+					<div id="tuijian-right">
+						<a href="javasctript:;" class="right"></a>
+					</div>
+				</div>
+			</section>
+			
+			<!--客服中心-->
+			<section class="service">
+				<section class="kefu">
+				<div class="kefu-tel">
+					<dl>
+						<dt class="icon-box">
+							<i class="icon icon-footer-phone"></i>
+						</dt>
+						<dd>
+							<p>致电服务中心</p>
+							<p>400-071-8899</p>
+							<p>
+								周一至周日
+								<span>9:00 - 22:00</span>
+							</p>
+						</dd>
+					</dl>
+				</div>
+				<div class="kefu-team">
+					<dl>
+						<dt class="icon-box">
+							<i class="icon icon-footer-service"></i>
+						</dt>
+						<dd>
+							<p>专业客服人员团队</p>
+							<p>提供当季优惠信息</p>
+							<p>为您推荐产品</p>
+						</dd>
+					</dl>
+
+				</div>
+				<div class="kefu-chanpin">
+					<dl>
+						<dt class="icon-box">
+							<i class="icon icon-footer-true"></i>
+						</dt>
+						<dd>
+							<p>所售三星品牌产品</p>
+							<p>均为官方正品</p>
+							<p>请安心购买</p>
+						</dd>
+					</dl>
+
+				</div>
+			</section>
+			</section>
+			
+			<!--在线咨询-->
+			<section id="zixun">
+				<span>在线咨询</span>
+			</section>
+			<section id="w-icon">
+				<div class="w-inner">
+					<div class="w-header">
+						<span>欢迎光临三星网上商城</span>
+						<div id="close">
+							<div class="w-mini"></div>
+							<div class="w-close"></div>
+						</div>
+					</div>
+					<div class="w-banner">
+						<div class="w-banner1">
+							我们竭诚为您服务！
+						</div>
+						<div class="w-banner2">您需要何种帮助？请选择类型。</div>
+					</div>
+					<div class="w-buttons">
+						<div class="w-buttons-item">
+							<div class="item-icon item1"></div>
+							<div class="item-string">
+								<div class="item-title">购物咨询</div>
+								<div class="item-txt">产品介绍、活动说明</div>
+							</div>
+						</div>
+						<div class="w-buttons-item">
+							<div class="item-icon item2"></div>
+							<div class="item-string">
+								<div class="item-title">售后服务</div>
+								<div class="item-txt">售后问题、订单问题</div>
+							</div>
+						</div>
+						<div class="w-buttons-item">
+							<div class="item-icon item3"></div>
+							<div class="item-string">
+								<div class="item-title">购物指南</div>
+								<div class="item-txt">购物流程 常见问题</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			
+			<!--回到顶部-->
+			<section id="toTop">
+				<i class="icon-top icon"></i>
+			</section>
+			
+			<!--底部-->
+			<footer>
+				<div class="foot1">
+					<div class="container">
+						<div class="foot1-left">
+							<dl>
+								<dt><a href="">我的三星</a></dt>
+								<dd>
+									<a href="">我的订单</a>
+								</dd>
+								<dd>
+									<a href="">我的积分</a>
+								</dd>
+								<dd>
+									<a href="">优惠券</a>
+								</dd>
+								<dd>
+									<a href="">个人资料</a>
+								</dd>
+								<dd>
+									<a href="">收货地址</a>
+								</dd>
+								<dd>
+									<a href="">售货网点查询</a>
+								</dd>
+							</dl>
+							<dl>
+								<dt><a href="">网上商城指南</a></dt>
+								<dd>
+									<a href="">购物指南</a>
+								</dd>
+								<dd>
+									<a href="">支付方式</a>
+								</dd>
+								<dd>
+									<a href="">订单及发票</a>
+								</dd>
+								<dd>
+									<a href="">关于配送</a>
+								</dd>
+								<dd>
+									<a href="">售后服务</a>
+								</dd>
+								<dd>
+									<a href="">会员及优惠</a>
+								</dd>
+							</dl>
+							<dl>
+								<dt><a href="">服务支持</a></dt>
+								<dd>
+									<a href="">常见问题</a>
+								</dd>
+								<dd>
+									<a href="">关于商城</a>
+								</dd>
+								<dd>
+									<a href="">关于三星</a>
+								</dd>
+								<dd>
+									<a href="">联系我们</a>
+								</dd>
+								<dd>
+									<a href="">使用条款</a>
+								</dd>
+								<dd>
+									<a href="">加入书签</a>
+								</dd>
+							</dl>
+							<div class="foot1-bottom">
+								<p>&copy; 1995-2018 三星（中国）投资有限公司 版权所有</p>
+							</div>
+						</div>
+						<div class="foot1-right">
+							<p>官方分享</p>
+							<div class="wei">
+								<div class="fenxiang weibo">
+									<a href=""></a>
+								</div>
+								<div class="fenxiang weixin">
+									<a href=""></a>
+								</div>
+							</div>
+						</div>
+
+					</div>
+				</div>
+				<div class="foot2">
+					<div class="container">
+						<div class="foot2-left">
+							<ul class="fuwu">
+								<li>
+									<a href="">服务条款</a>
+								</li>
+								<li>
+									<a href="">隐私政策</a>
+								</li>
+								<li>
+									<a href="">访客协议</a>
+								</li>
+							</ul>
+							<p>此网页最好使用IE9及以上浏览器、谷歌浏览器、苹果浏览器和其他新式浏览器进行浏览。</p>
+						</div>
+						<div class="foot2-right">
+							<p>三星（中国）投资有限公司授权北京鹏泰宝尊电子商务有限公司运营三星网上商城并销售产品</p>
+							<p>
+								<a href="">京ICP备18036817号-2</a>
+								<a href="">营业执照</a>
+							</p>
+						</div>
+					</div>
+				</div>
+			</footer>
+
+		</section>
+	</body>
+
+</html>

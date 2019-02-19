@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>登录页</title>
+		<link rel="stylesheet" type="text/css" href="../css/base.css" />
+		<link rel="stylesheet" type="text/css" href="../css/login.css" />
+		<script src="../lib/jquery-3.0.0.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../lib/jquery.cookie.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../js/login.js" type="text/javascript" charset="utf-8"></script>
+		
+	</head>
+
+	<body>
+		<script>
+        $(document).ready(function(){
+            var rem = $.cookie('remember');
+            if(rem){
+                $("#remember").prop("checked",true);
+                $("#iptLgnPlnID").val($.cookie("username"));
+                $("#iptLgnPlnPD").val($.cookie("password"));
+            }
+           
+        });
+    </script>
+		<!--登录页初始-->
+		<div id="login1" style="display: block;">
+			<!--头部导航-->
+			<div id="wrapper">
+
+				<!-- 顶部导航部分 -->
+				<div class="header header-simplify">
+					<div class="nav-container float-clearfix">
+						<div class="nav-bar float-left">
+							<h1 class="navbar-header inline-block sam-logo">
+				        <a href="../index.html">
+				        	<img class="logo" src="../img/logo.png" alt="">
+				        </a>
+				    </h1>
+						</div>
+						<div class="header-right float-right">
+							<a class="styles-tel" href="tel:400 071 8899"><i class="icon icon-phone"></i>400 071 8899</a>
+							<label id="orderlive114958" style=" float: right;"><div style="display: block;" id="live114958"><a class="specialist navchat" href="javascript:void(0)" target="_self" id="open-zd-chat" onclick="return false"><i class="icon icon-service" style="top:5px; margin-right: 4px;"></i><span class="none-xs">在线客服</span></a></div></label>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<!--内容部分-->
+			<div class="container">
+				<div class="estore-nav">
+					<div class="estore-bg">
+						<div class="img-box">
+							<img class="tu_pc" src="../img/bg-pc.jpg" alt="">
+						</div>
+					</div>
+
+					<div class="estore-con">
+						<div class="con-title">
+							<img class="title-left-logo" src="../img/logo-pc.png" alt="logo">
+							<p class="title-left-welcome">欢迎登录三星网上商城</p>
+							<p class="title-left-discount">登录三星账号购机可获得三星积分及优惠券领取使用</p>
+						</div>
+						<div class="con-landfall-mode">
+							<div class="mode-right-box">
+								<h2 class="mode-right-title">
+									请选择登录方式
+								</h2>
+								<ul class="mode-right-choose">
+									<li>
+										<a href="javascript:;"><img src="../img/right-wechat.png" alt=""></a>
+									</li>
+									<li>
+										<a href="javascript:;"><img src="../img/right-alipay.png" alt=""></a>
+									</li>
+									<li class="sx-login">
+										<a href="javascript:;" id="samsungLogin"><img src="../img/right-estore.png" alt=""></a>
+									</li>
+								</ul>
+								<p class="mode-right-no-account"><span></span>还没有三星账号<span></span></p>
+								<div class="register-button ">
+									<a class="mode-right-register" href="register.html">立即注册</a>
+								</div>
+								<a class="mode-right-help" href="javasctript:;">获得更多帮助</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<!--底部导航-->
+			<div class="footer footer-text">
+			<p>© 1995-2018 三星（中国）投资有限公司 版权所有</p>
+				<p>三星（中国）投资有限公司授权北京鹏泰宝尊电子商务有限公司运营三星网上商城并销售产品</p>
+		</div>
+		</div>
+	
+		<!--登录页第二层-->
+		<div id="login2" style="display: none;">
+			<div class="iam-wrapper">
+				<main class="iam-main ng-scope">
+					<div class="iam-main-inner">
+						<div class="iam-contents">
+							<h2>三星账户</h2>
+							<div class="iam-forms">
+								<form action="">
+									<fieldset id="">
+										<legend></legend>
+										<!--账号-->
+										<div class="iam-input-container   active">
+								<label for="iptLgnPlnID">电子邮件</label>
+								<input id="iptLgnPlnID" type="email" maxlength="100" class="ng-pristine ng-untouched ng-valid ng-valid-email ng-valid-maxlength ng-not-empty" autocomplete="off">
+							</div>
+										
+										<!--密码-->
+										<div class="iam-input-container   active">
+								<label for="iptLgnPlnPD">密码</label>
+								<input id="iptLgnPlnPD" type="password" maxlength="100" class="ng-pristine ng-untouched ng-valid ng-valid-email ng-valid-maxlength ng-not-empty" autocomplete="off">
+							</div>
+										
+										<!--记住我的密码-->
+										<div class="iam-radio" id="rememberID">
+								<input type="checkbox" id="remIdChkYN" class="ng-pristine ng-untouched ng-valid ng-not-empty" autocomplete="off">
+								<label for="remIdChkYN"><span><span></span></span>记住我的 ID</label>
+							</div>
+										
+										<!--图片-->	
+										<div class="iam-signIn-banner ng-scope">
+								<img width="100%" alt="" style="cursor:pointer" src="../img/logintu.jpg">
+							</div>
+							
+										<!--登录按钮-->
+										<div class="iam-signIn-button"><button class="iam-button iam-primary" id="signInButton" type="button">登录</button></div>
+										
+										
+									</fieldset>
+								</form>
+							</div>
+						
+							<div class="iam-signIn-link"><a href="#" data-ng-click="findInfo()">查找 ID 或重置密码？</a> <span class="break">或</span> <a href="register.html">点此注册</a></div>
+							
+							<button type="button" class="btn-close"">go back</button>
+							
+						</div>
+					</div>
+				</main>
+			</div>
+		</div>
+	</body>
+
+</html>
